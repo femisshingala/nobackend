@@ -60,8 +60,8 @@ exports.addIncome=async(req,res)=>{
 }
 
 exports.incobj=async(req,res)=>{
-console.log(req.session.userid)
-const indata = await IncomeSchema.find({incomeobj:req.session.userid})
+// console.log(req.session.userid)
+const indata = await IncomeSchema.find({})
 // .populate('incomeobj');
   res.json(indata);
 }
