@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 require('dotenv').config();
 
-// const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 // //middleware
 app.use(fileUpload({
